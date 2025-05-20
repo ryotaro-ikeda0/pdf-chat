@@ -1,0 +1,12 @@
+[project]
+name = "backend"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
+[build-system]
+requires = ["uv>=0.1"]
+build-backend = "uv.build"
+
