@@ -1,12 +1,23 @@
-[project]
+[tool.poetry]
 name = "backend"
 version = "0.1.0"
-dependencies = [
-    "fastapi",
-    "uvicorn"
-]
+description = "FastAPI backend"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+"uvicorn[standard]" = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+ruff = "*"
+black = "*"
+mypy = "*"
+httpx = "*"
 
 [build-system]
-requires = ["uv>=0.1"]
-build-backend = "uv.build"
-
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
