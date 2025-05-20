@@ -1,20 +1,21 @@
 # pdf-chat
 
 ## Backend
+The backend uses FastAPI and is located in the `backend` directory. Development is containerized with Docker and dependencies are managed via Poetry.
 
-The backend is a FastAPI application located in the `backend` directory. Package management
-is handled using [uv](https://github.com/astral-sh/uv).
-
-To install dependencies and run the server:
+To start the development server:
 
 ```bash
 cd backend
-uv pip install -e .
-uvicorn main:app --reload
+make up
+```
+
+Run tests and linting:
+
+```bash
+make lint
+make test
 ```
 
 ## Frontend
-
 A placeholder `frontend` directory has been created. The structure will be filled in later.
-
-
