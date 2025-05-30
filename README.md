@@ -18,4 +18,22 @@ make test
 ```
 
 ## Frontend
-A placeholder `frontend` directory has been created. The structure will be filled in later.
+The `frontend` directory contains a Vite + React + TypeScript project with
+Tailwind CSS, ESLint, Prettier, Husky and Vitest configured.
+
+### Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Linting and Tests
+
+```bash
+npm run lint
+npm run test
+```
+
+Commits trigger Husky's pre-commit hook which runs formatting, linting and tests.
